@@ -27,7 +27,7 @@ const baseUrl="http://localhost:4000/";
     // },[])
    return (
     <>
-    <div className='bg-slate-800 w-screen h-screen overflow-auto '>
+    <div className='bg-slate-800 w-screen h-screen overflow-hidden '>
         <div className='flex items-center justify-center flex-col text-zinc-50 font-sans text-4xl animate-pulse duration-100'>
         <h1>Hi! I am Narayana Ai</h1>
         <h1>Ask me About Planets!!</h1>
@@ -35,7 +35,7 @@ const baseUrl="http://localhost:4000/";
        
     <div className='mt-40 flex items-center justify-center md:grid-cols-3 sm:grid-cols-3'>
         <form>
-            <input className='rounded-lg py-6 px-40  focus:ring-violet-600'type="text-area" placeholder='Ask Narayan Ai!' onChange={(e)=>{setprompt(e.target.value)}} ></input><br></br>
+            <textarea className='rounded-lg py-6 px-40  focus:ring-violet-600'type="text-area" placeholder='Ask Narayan Ai!' onChange={(e)=>{setprompt(e.target.value)}} ></textarea><br></br>
             <br></br>
             <button className='py-2 px-2 bg-gray-200 rounded-lg mx-48  hover:bg-slate-600 hover:text-white'onClick={(e)=>{handleClick(e)}}>Ask Me!</button>
                     
