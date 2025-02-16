@@ -15,14 +15,16 @@ app.get('/',(req,res)=>{
 const userRoute=require("./routes/auth");
 app.use("/api/users/", userRoute);
 
-const artistsRoutes=require("./routes/artist")
-app.use("/api/artists/",artistsRoutes)
 
-const albumRoutes=require("./routes/album")
-app.use("/api/albums",albumRoutes)
+// const artistsRoutes=require("./routes/artist")
+// app.use("/api/artists/",artistsRoutes)
 
-const songRoutes=require("./routes/song")
-app.use("api/songs/",songRoutes)
+// const albumRoutes=require("./routes/album")
+// app.use("/api/albums",albumRoutes)
+
+// const songRoutes=require("./routes/song")
+// app.use("api/songs/",songRoutes)
+
 const gem=require("./routes/Gemini")
 app.use("/api/gemm/",gem);
 mongoose.connect("mongodb+srv://axel1:axel1@cluster0.s7px7no.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",{useNewUrlParser : true});
